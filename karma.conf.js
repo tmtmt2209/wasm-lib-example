@@ -16,7 +16,6 @@ module.exports = config =>
         rules: [
           {
             test: /\.ts$/,
-            exclude: /node_module/,
             use: 'ts-loader'
           }
         ]
@@ -24,7 +23,6 @@ module.exports = config =>
     },
     plugins: [
       'karma-webpack',
-      'karma-mocha',
       'karma-chrome-launcher',
       'karma-jasmine'
     ]
