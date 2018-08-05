@@ -1,5 +1,5 @@
 # `wasm-lib-example`
-Example of library package using wasm-bindgen
+Example of javascript library package using [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen).
 
 ## Requirements
 - rust nightly toolchain
