@@ -1,8 +1,6 @@
-#![feature(use_extern_macros)]
-
+extern crate wasm_bindgen;
 extern crate octavo_digest as digest;
 extern crate octavo_mac as mac;
-extern crate wasm_bindgen;
 
 use mac::hmac::Hmac;
 use mac::Mac;
