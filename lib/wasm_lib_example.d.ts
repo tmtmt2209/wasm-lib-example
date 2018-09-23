@@ -1,3 +1,3 @@
 /* tslint:disable */
-export function hash_with_secret(arg0: string): Uint8Array;
+export function sign(arg0: string): Uint8Array;
 

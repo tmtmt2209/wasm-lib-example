@@ -1,4 +1,4 @@
-it('hash_with_secret', () =>
+it('sign', () =>
     import('../lib/wasm_lib_example.js')
         .then(wasm =>
             wasm.sign('some_message')
