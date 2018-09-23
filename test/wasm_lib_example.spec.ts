@@ -1,7 +1,7 @@
 it('hash_with_secret', () =>
     import('../lib/wasm_lib_example.js')
         .then(wasm =>
-            wasm.hash_with_secret('some_message')
+            wasm.sign('some_message')
         )
         .then(array =>
             expect(array)
