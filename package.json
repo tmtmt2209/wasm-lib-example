@@ -1,6 +1,6 @@
 {
   "name": "wasm-lib-example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Example of library package using wasm-bindgen",
   "directories": {
     "lib": "lib"
@@ -21,16 +21,16 @@
   "homepage": "https://github.com/tmtmt2209/wasm-lib-example#readme",
   "devDependencies": {
     "@types/jasmine": "^2.8.8",
-    "eslint": "^5.1.0",
-    "jasmine-core": "^3.1.0",
+    "eslint": "^5.6.0",
+    "jasmine-core": "^3.2.1",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^2.0.5",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.2",
-    "karma-webpack": "^3.0.0",
-    "ts-loader": "^4.4.2",
-    "typescript": "^3.0.1",
+    "karma-webpack": "^3.0.5",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.3",
     "typescript-eslint-parser": "^17.0.1",
-    "webpack": "^4.16.2"
+    "webpack": "^4.19.1"
   }
 }
