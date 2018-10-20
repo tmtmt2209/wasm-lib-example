@@ -1,6 +1,6 @@
 [package]
 name = "wasm-lib-example"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["tmtmt2209 <tmtmt2209@gmail.com>"]
 
 [lib]
