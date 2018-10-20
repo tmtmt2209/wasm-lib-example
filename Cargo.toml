@@ -1,12 +1,12 @@
 [package]
 name = "wasm-lib-example"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["tmtmt2209 <tmtmt2209@gmail.com>"]
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm-bindgen = "=0.2.22"
+wasm-bindgen = "=0.2.25"
 octavo-mac = "0.1.1"
 octavo-digest = "0.1.2"
