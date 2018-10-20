@@ -1,9 +1,10 @@
 # `wasm-lib-example`
-Example of javascript library package using [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen).
+An example of javascript library package with [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen).
+In this example, TypeScript and Flow definition files are exported.
 
 ## Requirements
 - rust nightly toolchain
-- target wasm32-unknown-unknown
+    - target wasm32-unknown-unknown
 - wasm-bindgen-cli
 - node.js
 
