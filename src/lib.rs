@@ -1,13 +1,13 @@
-extern crate wasm_bindgen;
 extern crate octavo_digest as digest;
 extern crate octavo_mac as mac;
+extern crate wasm_bindgen;
 
 use mac::hmac::Hmac;
 use mac::Mac;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub fn sign(message: &str) -> Vec<u8> {
+pub fn hmac_with_secret(message: &str) -> Vec<u8> {
     let secret = b"some_secret";
 
     let mut hmac_sha256 = Hmac::<digest::sha2::Sha256>::new(secret);
@@ -22,12 +22,15 @@ pub fn sign(message: &str) -> Vec<u8> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
     #[test]
     fn test_sign() {
         let except = vec![
             157, 92, 228, 175, 135, 190, 204, 185, 189, 175, 179, 183, 247, 34, 162, 147, 44, 196,
             233, 30, 168, 152, 53, 149, 36, 74, 121, 240, 126, 107, 255, 201,
         ];
-        assert_eq!(except, sign("some_message"));
+        let actual = hmac_with_secret("some_message");
+
+        assert_eq!(actual, except);
     }
 }
