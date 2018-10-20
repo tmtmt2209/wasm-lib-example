@@ -1,3 +1,3 @@
 /* tslint:disable */
-export function sign(arg0: string): Uint8Array;
+export function hmac_with_secret(arg0: string): Uint8Array;
 

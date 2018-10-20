@@ -1,7 +1,7 @@
 it('sign', () =>
     import('../lib/wasm_lib_example.js')
         .then(wasm =>
-            wasm.sign('some_message')
+            wasm.hmac_with_secret('some_message')
         )
         .then(array =>
             expect(array)
